@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Github User Finder</title>
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="./assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="180x180" href="./assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./assets/img/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="./assets/img/android-chrome-512x512.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Baloo+Tammudu+2:400,500,600,700,800&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Space+Mono:400,400i,700,700i&amp;display=swap">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+<body id="user-finder" class="dark-primary-text-color dark-primary-background">
+    <section id="main-container">
+        <div class="row">
+            <div class="col devfinder-label">
+                <h1>devfinder</h1>
+            </div>
+            <div class="col">
+                <div class="theme">
+                    <h6 id="light-dark-text" class="light-dark-text">LIGHT</h6>
+                    <i id="dark" class="fas fa-moon"></i>
+                    <i id="light" class="icon ion-android-sunny"></i>
+                </div>
+            </div>
+        </div>
+        <div class="row search-container dark-secondary-background" id="search-container">
+            <div class="col-9 col-md-9 d-flex justify-content-center align-items-center text-col"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-search">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <circle cx="10" cy="10" r="7"></circle>
+                    <line x1="21" y1="21" x2="15" y2="15"></line>
+                </svg><input type="text" id="search-username" class="user-search-text dark-secondary-background dark-primary-text-color" placeholder="Search GitHub Username" style="font-family: 'Space Mono', monospace;"></div>
+        </div>
+        <section id="details-container" class="dark-secondary-background dark-primary-text-color">
+            <div class="row">
+                <div class="col-4 col-xl-3 img"><img id="avatar" class="image-container" src="./assets/img/small.jpg"></div>
+                <div class="col" style="margin-left: 10px;">
+                    <h1 id="name" class="name">The Octotact</h1>
+                    <p id="username" class="user-name">@octotact</p>
+                    <p id="date-joined" class="joined-date">Joined 25 Januvary 2021</p>
+                </div>
+            </div>
+            <div class="row bio-container">
+                <div class="col bio">
+                    <p id="bio-para">Lorem ipsum dolor sit amet consecteturadipisicing elit. At illoporrolaborum dolor delectus perspiciatis</p>
+                </div>
+            </div>
+            <div id="stats-container" class="row stats-container dark-primary-background">
+                <div class="col-3 offset-xl-0 text-center">
+                    <p class="repos-para">Repos</p>
+                    <p id="repos" class="para-2">47</p>
+                </div>
+                <div class="col-5 text-center">
+                    <p class="followers-para">Followers</p>
+                    <p id="followers" class="para-2">3938</p>
+                </div>
+                <div class="col-4 text-center">
+                    <p class="following-para">Following</p>
+                    <p id="following" class="para-2">9</p>
+                </div>
+            </div>
+            <div class="row d-flex flex-column flex-xl-row personal-details">
+                <div class="col-xl-6 text-start d-flex flex-column justify-content-start">
+                    <p id="location" class="location"><i class="icon ion-ios-location ic"></i>San Francisco</p>
+                    <p id="website" class="link"><i class="fas fa-link ic"></i>https://github.blog</p>
+                </div>
+                <div class="col-xl-6 text-start">
+                    <p id="twitter" class="twitter"><i class="fa fa-twitter ic"></i>Not Avilable</p>
+                    <p id="company" class="company"><i class="fa fa-building-o ic"></i>@github</p>
+                </div>
+            </div>
+        </section>
+        <section id="user-not-found" class="dark-primary-text-color">
+            <div class="row">
+                <div class="col">
+                    <h1>User Not Found&nbsp; !</h1>
+                </div>
+            </div>
+        </section>
+    </section>
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>
