@@ -30,9 +30,6 @@ searchUsername.addEventListener('keyup',(e)=>{
    
 })
 
-// fetch(`https://api.github.com/users/${user}?client_id=Iv1.5f3505526261bb76&client_secret=6d999c13d7aed2cc34b19a75b0c0da0cbff0b1ff`)
-
-
 function updateUi(data){
    if(data.message=="Not Found"){
       detailsContainer.style.display="none";
